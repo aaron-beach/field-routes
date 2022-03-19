@@ -18,3 +18,10 @@ export const ContentWrapper = styled.div`
 	max-width: 72rem;
 	padding: 0 1rem;
 `;
+
+export const VerticalDivider = styled.span`
+	border-left: 1px solid ${(props) => {
+			return props.color? props.color: COLORS.WHITE;
+		}};
+	height: 14px;
+`;
