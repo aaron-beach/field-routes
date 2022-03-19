@@ -8,7 +8,7 @@ export const PageTitle = styled.h1`
 
 export const SectionTitle = styled.h2`
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 3rem;
+	font-size: 48px;
 	line-height: 1;
 `;
 
@@ -20,15 +20,9 @@ export const SectionSubtitle = styled.h3`
 
 export const P = styled.p`
 	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
 `;
 
 export const A = styled.a`
 	font-family: 'Libre Franklin', sans-serif;
-`;
-
-export const UL = styled.ul``;
-
-export const LI = styled.li`
-	font-size: 1.25rem;
-	line-height: 1.2;
 `;

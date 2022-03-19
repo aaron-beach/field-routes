@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Button from './Button';
-import Logo from './Logo';
-import { COLORS } from './shared';
+import Button from '../Button';
+import Logo from '../Logo';
+import { COLORS } from '../shared';
 
 const NavBar = () => {
 	const Wrapper = styled.nav`
