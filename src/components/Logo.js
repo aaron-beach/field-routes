@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { COLORS } from './shared';
 
 const Logo = () => {
   const StyledLogo = styled.img`
