@@ -1,24 +1,38 @@
 import styled from 'styled-components';
-import Button from "./Button";
+import Button from './Button';
+import Logo from './Logo';
+import { COLORS } from './shared';
 
 const NavBar = () => {
-	const Wrapper = styled.section`
-		padding: 4em;
-    display: flex;
-    justify-content: space-around;
-		background: papayawhip;
+	const Wrapper = styled.nav`
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background: ${COLORS.WHITE};
+		height: 100px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	`;
+		
+	const PhoneLink = styled.a`
+		font-size: 21px;
+		font-family: 'Libre Franklin', sans-serif;
+		margin: 32px;
+		text-decoration: none;
+		font-weight: 600;
+		color: ${COLORS.DARK_BLUE}
+		
 	`;
 	return (
-		<>
 			<Wrapper>
-        <h1>FieldRoutes</h1>
+        <Logo />
         <div>
-          <a href='tel:888-888-8888'>(888) 888-8888</a>
+          <PhoneLink href='tel:888-888-8888'>(888) 888-8888</PhoneLink>
           <Button name="Contact Us"/>
 
         </div>
 			</Wrapper>
-		</>
 	);
 };
 
