@@ -9,6 +9,7 @@ const Banner = () => {
     height: 256px;
     line-height: 256px;
     color: ${COLORS.WHITE};
+    margin: 0;
     margin-top: 100px;
     background-color: ${COLORS.DARK_BLUE};
     font-style: italic;

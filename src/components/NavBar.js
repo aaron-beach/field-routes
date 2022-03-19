@@ -16,7 +16,7 @@ const NavBar = () => {
 	`;
 		
 	const PhoneLink = styled.a`
-		font-size: 21px;
+		font-size: 18px;
 		font-family: 'Libre Franklin', sans-serif;
 		margin: 32px;
 		text-decoration: none;

@@ -15,6 +15,8 @@ const Applicant = () => {
   const ApplicantText = styled( P )`
     color: ${COLORS.DARK_BLUE};
     font-size: 32px;
+    margin: 0;
+    margin-bottom: 16px;
   `;
 
   const LinkedIn = styled.img`

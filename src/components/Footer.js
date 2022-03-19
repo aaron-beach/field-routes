@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLORS } from './shared';
+import { COLORS, VerticalDivider } from './shared';
 import { P } from './type';
 
 const Footer = () => {
@@ -22,11 +22,6 @@ const Footer = () => {
 		font-size: 14px;
     padding: 12px;
     `;
-    
-    const FooterDivider = styled.span`
-		border-left: 1px solid white;
-		height: 14px;
-	`;
 
 	return (
 		<Wrapper>
@@ -35,9 +30,9 @@ const Footer = () => {
 				property of their respective owners.
 			</FooterText>
       <FooterLink href='/'>Terms of Use</FooterLink>
-      <FooterDivider />
+      <VerticalDivider />
 			<FooterLink href='/'>Privacy Policy</FooterLink>
-      <FooterDivider />
+      <VerticalDivider />
 			<FooterLink href='/'>Accessibility Statement</FooterLink>
 		</Wrapper>
 	);
