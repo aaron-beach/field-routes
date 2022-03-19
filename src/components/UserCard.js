@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { COLORS, VerticalDivider } from './shared';
 import { SectionSubtitle, P, A } from './type';
 
-const UserCard = () => {
+const UserCard = (props) => {
   const Card = styled.div`
 		background-color: ${COLORS.WHITE};
 		border-radius: 8px;
@@ -56,18 +56,41 @@ const UserCard = () => {
 		text-decoration: none;
 	`;
 
+  const handleLightBox = () => {
+    document.getElementById('shadowing').style.display = 'block';
+    document.getElementById('box').style.display = 'block';
+  };
+
+  const handleClose = () => {
+    console.log('Close');
+    document.getElementById('box').style.display = 'none';
+    document.getElementById('shadowing').style.display = 'none';
+  };
+
   return (
-    <Card>
-      <CardHeader>
-        <CardImage src='https://randomuser.me/api/portraits/med/men/75.jpg' />
-      </CardHeader>
-      <CardTitle >
-        <CardName>User Name</CardName>
-        <VerticalDivider color={COLORS.DARK_GREEN} />
-        <CardLocation>Location</CardLocation>
-      </CardTitle>
-			<CardAction href='/' className='card-link'>Learn More</CardAction>
-		</Card>
+		<>
+			<Card onClick={handleLightBox}>
+				<CardHeader>
+					<CardImage src='https://randomuser.me/api/portraits/med/men/75.jpg' />
+				</CardHeader>
+				<CardTitle>
+					<CardName>User Name</CardName>
+					<VerticalDivider color={COLORS.DARK_GREEN} />
+					<CardLocation>Location</CardLocation>
+				</CardTitle>
+				<CardAction className='card-link'>Learn More</CardAction>
+			</Card>
+			<div id='shadowing'></div>
+			<div id='box'>
+				<div id='boxheader'>
+					<span id='boxtitle'>Header Content</span>
+					<button id='boxclose' onClick={handleClose}>
+						X
+					</button>
+				</div>
+				<div id='boxcontent'>Body Content</div>
+			</div>
+		</>
 	);
 };
 
