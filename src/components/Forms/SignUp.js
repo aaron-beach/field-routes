@@ -1,8 +1,8 @@
 import { Formik, Field } from 'formik';
 import styled from 'styled-components';
-import Button from './Button';
+import Button from '../Button';
 
-const SignUpForm = () => {
+const SignUp = () => {
 	const Form = styled.form`
 		background-color: white;
 		box-shadow: 0px 24px 32px #00000014;
@@ -14,8 +14,22 @@ const SignUpForm = () => {
 		margin: 80px;
 		padding: 40px;
 		width: 656px;
-		#position-select {
+		#position-select,
+		.checkbox-options {
 			grid-column: 1 / span 2;
+		}
+		.checkbox-options {
+			text-align: center;
+		}
+		input,
+		select {
+			border: 1px solid #d0d0d0;
+			color: #a2a2a2;
+			font-size: 16px;
+			padding: 0 16px;
+		}
+		option {
+			color: #a2a2a2;
 		}
 	`;
 	return (
@@ -82,11 +96,13 @@ const SignUpForm = () => {
 						<option value='full-stack'>Full-stack Developer</option>
 					</select>
 
-					<div id='checkbox-group'>Are you located in the United States?</div>
 					<div
 						role='group'
 						aria-labelledby='checkbox-group'
 						className='checkbox-options'>
+						<span id='checkbox-group'>
+							Are you located in the United States?
+						</span>
 						<label>
 							Yes
 							<Field type='checkbox' name='checked' value='Yes' />
@@ -106,4 +122,4 @@ const SignUpForm = () => {
 	);
 };
 
-export default SignUpForm;
+export default SignUp;

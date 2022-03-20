@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import useSWR from 'swr';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner';

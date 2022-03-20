@@ -12,13 +12,13 @@ const Applicant = () => {
     justify-content: center;
 	`;
 
-  const ApplicantText = styled( P )`
-    color: ${COLORS.DARK_BLUE};
-    font-size: 32px;
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 16px;
-  `;
+  const ApplicantText = styled(P)`
+		color: ${COLORS.DARK_BLUE};
+		font: normal normal 600 32px/32px Libre Franklin;
+		letter-spacing: 0.16px;
+		margin: 0;
+		margin-bottom: 16px;
+	`;
 
   const LinkedIn = styled.img`
     height: 40px

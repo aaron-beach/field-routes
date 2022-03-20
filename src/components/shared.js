@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const BREAKPOINTS = {
+	SMALL: 'max-width: 40rem',
+	MEDIUM: 'max-width: 50rem',
+	LARGE: 'max-width: 60rem',
+};
 
 export const COLORS = {
 	BLACK: '#231F20',
