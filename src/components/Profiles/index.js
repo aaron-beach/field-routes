@@ -1,4 +1,5 @@
-import Card from "./Card";
+import Teaser from "./Teaser";
 import Header from "./Header";
+import Profile from "./Profile";
 
-export { Card, Header };
+export { Teaser, Header, Profile };

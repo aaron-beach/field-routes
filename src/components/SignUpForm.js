@@ -63,7 +63,7 @@ const SignUpForm = () => {
 					</label>
 					<Field id='phone' name='phone' placeholder='Phone' />
 
-					<label for='industry-select' hidden>
+					<label htmlFor='industry-select' hidden>
 						Industry
 					</label>
 					<select name='industry' id='industry-select'>
@@ -72,7 +72,7 @@ const SignUpForm = () => {
 						<option value='janitorial'>Cat</option>
 					</select>
 
-					<label for='position-select' hidden>
+					<label htmlFor='position-select' hidden>
 						Position
 					</label>
 
@@ -82,10 +82,11 @@ const SignUpForm = () => {
 						<option value='full-stack'>Full-stack Developer</option>
 					</select>
 
-					<div id='checkbox-group' >
-						Are you located in the United States?
-					</div>
-					<div role='group' aria-labelledby='checkbox-group' className='checkbox-options'>
+					<div id='checkbox-group'>Are you located in the United States?</div>
+					<div
+						role='group'
+						aria-labelledby='checkbox-group'
+						className='checkbox-options'>
 						<label>
 							Yes
 							<Field type='checkbox' name='checked' value='Yes' />

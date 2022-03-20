@@ -15,6 +15,7 @@ const Applicant = () => {
   const ApplicantText = styled( P )`
     color: ${COLORS.DARK_BLUE};
     font-size: 32px;
+    font-weight: 600;
     margin: 0;
     margin-bottom: 16px;
   `;
