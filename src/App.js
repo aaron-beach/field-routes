@@ -4,7 +4,9 @@ import NavBar from './components/layout/NavBar';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Applicant from './components/Applicant';
-import { Card } from './components/layout/Profile';
+import { Card, Header } from './components/Profiles';
+import FormContainer from './containers/FormContainer.js';
+import ProfilesContainer from './containers/ProfilesContainer';
 
 function App () {
 	const [user, setUser] = useState([]);
@@ -33,7 +35,8 @@ function App () {
 		<div className='App'>
 			<NavBar />
 			<Banner />
-      <Card user={ user }/>
+			<ProfilesContainer user={user} />
+			<FormContainer />
 			<Applicant />
 			<Footer />
 		</div>

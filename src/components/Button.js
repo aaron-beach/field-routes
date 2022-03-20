@@ -7,7 +7,7 @@ const Button = ( props ) => {
 		height: 56px;
 		background: ${COLORS.GREEN};
 		color: ${COLORS.WHITE};
-		width: 170px;
+		width: ${props.variant?'100%': '176px'};
 		border: none;
 		font-size: 20px;
 		font-weight: 600;

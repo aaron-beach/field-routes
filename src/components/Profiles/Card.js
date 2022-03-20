@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { COLORS, VerticalDivider } from '../../shared';
-import { SectionSubtitle, P, A } from '../../type';
+import { COLORS, VerticalDivider } from '../shared';
+import { SectionSubtitle, P, A } from '../type';
 
 const Card = ( props ) => {
 	
