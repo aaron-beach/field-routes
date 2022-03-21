@@ -2,34 +2,3 @@
   height: 100vh;
   width: 100vw;
 }
-
-#shadowing
-{
-  display: none;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0);
-  z-index:10;
-  opacity:0.5;
-  filter: alpha(opacity=50);
-}
-
-#box 
-{
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: calc(50% - 200px);
-  width: 400px;
-  height: 322px;
-  max-height:400px;
-  padding: 0;
-  margin:0;
-  border-radius: 8px;
-  background-color: white;
-  z-index:11;
-  text-align: center;
-}
