@@ -1,5 +1,5 @@
 import { SignUp, Header } from "../../components/Forms";
-import { COLORS } from "../../components/shared";
+import { COLORS, BREAKPOINTS } from "../../components/shared";
 import styled from "styled-components";
 
 const FormContainer = () => {
@@ -7,6 +7,10 @@ const FormContainer = () => {
     display: flex;
     justify-content: center;
     background-color: ${COLORS.GRAY};
+    @media (${BREAKPOINTS.MEDIUM}) {
+      flex-direction: column;
+      padding: 40px 0;
+    }
   `;
 
   return (

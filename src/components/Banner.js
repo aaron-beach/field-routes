@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "./shared";
+import { COLORS, BREAKPOINTS } from "./shared";
 import { PageTitle } from "./type";
 
 const Banner = () => {
@@ -12,6 +12,9 @@ const Banner = () => {
     background-color: ${COLORS.DARK_BLUE};
     font-style: italic;
     text-align: center;
+    @media (${BREAKPOINTS.LARGE}) {
+      margin: 80px auto;
+    }
   `;
   return (
     <>

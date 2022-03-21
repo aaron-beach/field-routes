@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Button from "../Button";
+import { BREAKPOINTS } from "../shared";
 
 const SignUp = () => {
   const Form = styled.form`
@@ -13,6 +14,9 @@ const SignUp = () => {
     margin: 80px;
     padding: 40px;
     width: 656px;
+    @media (${BREAKPOINTS.LARGE}) {
+      margin: 80px auto;
+    }
     #position-select,
     .checkbox-options,
     #form-button {
