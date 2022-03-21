@@ -16,7 +16,6 @@
     "react/react-in-jsx-scope": "off",
     "react/prop-types": 0,
     "no-console": "off",
-    "prettier/prettier": ["error", {}],
-    "max-len": ["error", {"code": 150, "ignoreUrls": true}]
+    "max-len": ["error", {"code": 120, "ignoreUrls": true}]
   }
 }

@@ -26,7 +26,9 @@ const Footer = () => {
 
   return (
     <Wrapper>
-      <FooterText>© 2021 Field Service Holdings, LLC - Trademarks and brands are the property of their respective owners.</FooterText>
+      <FooterText>
+        © 2021 Field Service Holdings, LLC - Trademarks and brands are the property of their respective owners.
+      </FooterText>
       <FooterLink href="/">Terms of Use</FooterLink>
       <VerticalDivider />
       <FooterLink href="/">Privacy Policy</FooterLink>

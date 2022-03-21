@@ -26,11 +26,7 @@ const Applicant = () => {
   return (
     <Wrapper>
       <ApplicantText>Aaron Beach</ApplicantText>
-      <a
-        href="https://www.linkedin.com/in/arbeach/"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href="https://www.linkedin.com/in/arbeach/" target="_blank" rel="noreferrer">
         <LinkedIn src="./LI.png" />
       </a>
     </Wrapper>
