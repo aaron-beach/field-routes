@@ -20,15 +20,15 @@ const Profile = (props) => {
     color: ${COLORS.LITE_BLUE};
     font-size: 24px;
     font-weight: 600;
-    margin: 0;
-    margin-top: 24px;
+    margin: 24px 0 0 0;
     text-transform: capitalize;
   `;
 
   const ProfileDesc = styled(P)`
     color: ${COLORS.DARK_GREEN};
+    margin: 24px 0;
     &.details {
-      margin: 6px;
+      margin: 0;
     }
   `;
 

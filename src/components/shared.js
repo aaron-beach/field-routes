@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BREAKPOINTS = {
   SMALL: "max-width: 40rem",
   MEDIUM: "max-width: 50rem",
-  LARGE: "max-width: 60rem"
+  LARGE: "max-width: 60rem",
 };
 
 export const COLORS = {
@@ -15,7 +15,7 @@ export const COLORS = {
   LITE_BLUE: "#00AECF",
   DARK_BLUE: "#1A1353",
   DARK_GREEN: "#2A474D",
-  GRAY: "#F7F7F9"
+  GRAY: "#F7F7F9",
 };
 
 export const ContentWrapper = styled.div`

@@ -15,6 +15,7 @@ const Footer = () => {
   const FooterText = styled(P)`
     font-size: 14px;
     padding: 12px;
+    margin: 0;
   `;
 
   const FooterLink = styled.a`
@@ -25,10 +26,7 @@ const Footer = () => {
 
   return (
     <Wrapper>
-      <FooterText>
-        © 2021 Field Service Holdings, LLC - Trademarks and brands are the property of their
-        respective owners.
-      </FooterText>
+      <FooterText>© 2021 Field Service Holdings, LLC - Trademarks and brands are the property of their respective owners.</FooterText>
       <FooterLink href="/">Terms of Use</FooterLink>
       <VerticalDivider />
       <FooterLink href="/">Privacy Policy</FooterLink>

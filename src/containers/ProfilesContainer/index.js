@@ -9,6 +9,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const ProfilesContainer = () => {
   const [profileToShow, setProfileToShow] = useState("");
+  const [show, setShow] = useState(true);
   const { data: result, error } = useSWR(url, fetcher, {
     revalidateOnFocus: false,
   });
@@ -56,13 +57,11 @@ const ProfilesContainer = () => {
 
   const handleLightBox = (user) => {
     setProfileToShow(user);
-    document.getElementById("shadowing").style.display = "block";
-    document.getElementById("box").style.display = "block";
+    setShow(true);
   };
 
   const handleClose = () => {
-    document.getElementById("box").style.display = "none";
-    document.getElementById("shadowing").style.display = "none";
+    setShow(false);
   };
 
   const profileCards = result.results.map((user, i) => (
@@ -73,11 +72,13 @@ const ProfilesContainer = () => {
     <>
       <Header />
       <TeaserWrapper>{profileCards}</TeaserWrapper>
-      <Shadow id="shadowing" />
       {profileToShow && (
-        <Box id="box">
-          <Profile user={profileToShow} onClick={handleClose} />
-        </Box>
+        <>
+          <Shadow id="shadowing" style={{ display: show ? "block" : "none" }} />
+          <Box id="box" style={{ display: show ? "block" : "none" }}>
+            <Profile user={profileToShow} onClick={handleClose} />
+          </Box>
+        </>
       )}
     </>
   );

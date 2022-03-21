@@ -8,6 +8,7 @@ const Header = () => {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 0 0 24px;
   `;
   const HeaderText = styled(SectionTitle)`
     color: ${COLORS.DARK_BLUE};
@@ -21,9 +22,10 @@ const Header = () => {
     <Wrapper>
       <HeaderText>We Are Looking Forward To Working With You</HeaderText>
       <BodyText>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est.
       </BodyText>
     </Wrapper>
   );

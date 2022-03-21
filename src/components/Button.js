@@ -11,7 +11,7 @@ const Button = (props) => {
     font-size: 20px;
     font-weight: 600;
   `;
-  return <StyledButton>{props.name}</StyledButton>;
+  return <StyledButton {...props}>{props.name}</StyledButton>;
 };
 
 export default Button;
