@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+<h1 align="center">Welcome to The Field Routes Hiring Assignment</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+## Table of contents
+* [Usage](#Usage)
+* [Author](#author)
 
-## Available Scripts
+
+
+## Usage
 
 In the project directory, you can run:
 
