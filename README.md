@@ -8,6 +8,35 @@
 * [Author](#author)
 
 ```mermaid
+sequenceDiagram
+    loop Daily query
+        Alice->>Bob: Hello Bob, how are you?
+        alt is sick
+            Bob->>Alice: Not so good :(
+        else is well
+            Bob->>Alice: Feeling fresh like a daisy
+        end
+
+        opt Extra response
+            Bob->>Alice: Thanks for asking
+        end
+    end
+```
+---
+```mermaid
+stateDiagram
+    direction LR
+    [*] --> A
+    A --> B
+    B --> C
+    state B {
+      direction LR
+      a --> b
+    }
+    B --> D
+```
+
+```mermaid
 stateDiagram-v2
     [*] --> First
 
@@ -25,7 +54,45 @@ stateDiagram-v2
         }
     }
 ```
+---
 
+```mermaid
+erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string allowedDriver FK "The license of the allowed driver"
+        string registrationNumber
+        string make
+        string model
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string driversLicense PK "The license #"
+        string firstName
+        string lastName
+        int age
+    }
+```
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
+    ORDER ||--|{ LINE-ITEM : contains
+    ORDER {
+        int orderNumber
+        string deliveryAddress
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
+```
 ---
 ```mermaid
       gantt 
